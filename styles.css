@@ -1,3 +1,85 @@
-.f{box-sizing: border-box;
-display: flex;
-text-decoration: none;}
+.container {
+    /* width: ширина контейнеру(найжирнішої секції на макеті) */
+    width: 1200px;
+    /* Внутрішні відступи які слугують для віступу 15px зліва та справа */
+    padding: 0 15px;
+    /* центрування */
+    margin: 0 auto;
+  }
+  
+  .list {
+    /* vh = viewport height = висота екрану */
+    height: 100vh;
+  
+    display: flex;
+    /* flex-wrap - працює з переносом рядків. Значення wrap дозволяє переносити рядки */
+    flex-wrap: wrap;
+    /* justify-content працює з шириною у flexbox і дозволяє нам вирівнювати елементи так як нам зручно */
+    justify-content: center;
+    /* align-items = працює з одним рядком */
+    /* align-items: start; */
+    /*  align-content = працює 2+ рядка */
+    align-content: center;
+  }
+  
+  .list-item {
+    margin-right: 130px;
+  }
+  
+  /*  кожний третій елемент*/
+  .list-item:nth-child(3n + 3) {
+    margin-right: 0px;
+  }
+  /* перші три елементи */
+  .list-item:nth-child(-n + 3) {
+    margin-bottom: 20px;
+  }
+  .heading {
+    color: #333;
+  
+    margin-bottom: 20px;
+  
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-variant: small-caps;
+  }
+  
+  .text {
+    width: 275.78px;
+  
+    color: #b6b6b6;
+    font-family: Roboto;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 146.667% */
+  }
+  
+  /* order = порядок - ця властивість дозволяє розставляти елементи по порядку (визначає порядок, в якому flex-елементи відображаються всередині flex-контейнера) */
+  /* За замовчуванням для всіх елементів order = 0 */
+  .list-item:first-child {
+    width: 1000px;
+    /* flex-basis - відповідає за ширину елементу */
+    /* flex-basis має більший приорітет за Width */
+    flex-basis: 800px;
+  
+    flex-grow: 1;
+    flex-shrink: 400px;
+    order: 1;
+  }
+  .list-item:last-child {
+    order: -1;
+  }
+  
+  /* growing - розширюватись, збільшуватись */
+  
+  /* flex-grow - властивість яка дозволяє елементу розширюватись якщо є вільний простір */
+  /* вільний може з'явитись у тих випадках коли наш сайт відкривають на великих екранах, коли видаляють елементи */
+  
+  /* flex-shrink - властивість яка вказує на скільки елемент може зменшитись  */
+  /* за замовчуванням значення 1  */
+  /* значення працюють в коєфіцієнтному порядку */
+  /* 1 = 1  1=2 3 4 */
