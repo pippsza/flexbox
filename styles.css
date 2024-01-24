@@ -1,3 +1,94 @@
+.header{
+  display: flex;
+}
+.web{margin-right: 93px;}
+.portfolio{
+  margin-right: 50px;
+}
+.studiya{
+  margin-right: 50px;
+}
+.contact{
+  margin-right: 344px;
+}
+.info{margin-right: 50px;}
+.box1{
+  height: 600px;
+  background-color: grey;
+  padding-top: 200px;
+}
+.box2{
+  width: 696px;
+  margin: 0 auto;
+}
+h1{
+  font-size: 44px;
+  text-align: center;
+}
+.btn{
+  width: 216px;
+  height: 50px;
+  margin: 0 auto;
+}
+.box3{
+  margin-top: 30px;
+  margin-left: 477px;
+}
+.flexlist{
+  display: flex;
+  justify-content:  ;
+
+}
+.boxinf{
+  margin-top: 94px;
+  height: 98px;
+}
+
+
+.li1:nth-child(-n + 3) {
+  margin-right: 30px;
+}
+.li1{
+  width: 270px;
+  text-align: start;
+}
+h3{margin-bottom: 10px;}
+.box5{
+  height: 386px;
+  margin-top: 94px;
+}
+h2{font-size: 36px;
+text-align: center;
+margin-bottom: 50px;}
+.flexlist2{
+  display: flex;
+}
+.li2:nth-child(-n+2){
+  margin-right: 30px;
+}
+.box6{
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
+
+.box7{
+  display: flex;
+}
+.box7:nth-child(-n+3){
+  margin-right: 30px;
+  align-items: center;
+}
+.li3{
+  text-align: center;
+}
+.li3:nth-child(-n+3){
+  margin-right: 30px;
+
+
+}
+.im1{width: 270px;
+height: 260px;}
+
 .container {
     /* width: ширина контейнеру(найжирнішої секції на макеті) */
     width: 1200px;
