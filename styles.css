@@ -45,13 +45,7 @@ h1{
 }
 
 
-.li1:nth-child(-n + 3) {
-  margin-right: 30px;
-}
-.li1{
-  width: 270px;
-  text-align: start;
-}
+
 h3{margin-bottom: 10px;}
 .box5{
   height: 386px;
@@ -174,3 +168,76 @@ height: 260px;}
   /* за замовчуванням значення 1  */
   /* значення працюють в коєфіцієнтному порядку */
   /* 1 = 1  1=2 3 4 */
+
+  .li11{
+    width: 270px;
+    text-align: start;
+    margin-right: 30px;
+  }
+  .li12{
+    width: 270px;
+    text-align: start;
+    margin-right: 30px;
+  }
+  .li13{
+    width: 270px;
+    text-align: start;
+    margin-right: 30px;
+  }
+  .li14{
+    width: 270px;
+    text-align: start;
+
+  }
+  .li11::before{
+    display: block;
+    border-radius: 4px;
+    background-color: #f5f4fa;
+  content: "";
+  width: 270px;
+  height: 120px;
+  background-image: url(antenna\ 1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  }
+
+  .li12::before{
+    display: block;
+    border-radius: 4px;
+    background-color: #f5f4fa;
+  content: "";
+  width: 270px;
+  height: 120px;
+  background-image: url(Vector.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  }
+
+  .li13::before{
+    display: block;
+    border-radius: 4px;
+    background-color: #f5f4fa;
+  content: "";
+  width: 270px;
+  height: 120px;
+  background-image: url(diagram\ 1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  }
+
+  .li14::before{
+    display: block;
+    border-radius: 4px;
+    background-color: #f5f4fa;
+  content: "";
+  width: 270px;
+  height: 120px;
+  background-image: url(astronaut\ 1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  }
+
+.flexlist{
+  justify-content: center;
+}
+
